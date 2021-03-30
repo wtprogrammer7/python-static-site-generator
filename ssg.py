@@ -8,4 +8,5 @@ def main(source, dest):
         "source": source,
         "dest": dest
     }
-    class Site(source, dest):
+    class Site(**config.build())
+    
