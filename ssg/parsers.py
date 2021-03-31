@@ -12,4 +12,4 @@ class Parser:
 
     def read(self, path):
         with open(self.path) as file:
-            return file.read()
+            return file.read(file)
