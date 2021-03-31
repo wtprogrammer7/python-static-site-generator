@@ -5,4 +5,5 @@ class Parser:
     extensions: List[str] = []
 
     def valid_extension(self, extension):
-        self.extensions = extension
+        if extension in self.extensions:
+            return True
