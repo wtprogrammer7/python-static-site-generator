@@ -32,4 +32,4 @@ class Content(Mapping):
         return self.data[key]
 
     def __iter__(self):
-        self.data
+        self.data.__iter__()
