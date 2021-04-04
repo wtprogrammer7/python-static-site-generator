@@ -15,11 +15,14 @@ class Content(Mapping):
     def __init__(self, metadata, content):
         self.data = metadata
         self.data["content"] = content
+        
         @property
         def body(self):
             return self.data["content"]
+        
+        @property
         def type(self):
-            if self.data == type:
+            if "type" in self.data:
                 return self.data["type"]
             else:
                 return None
