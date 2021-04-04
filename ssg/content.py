@@ -28,8 +28,8 @@ class Content(Mapping):
         def type(self, type):
             self.data["type"] = type
 
-    def __getitem__(self, key):
-        return self.data[key]
+        def __getitem__(self, key):
+            return self.data[key]
 
-    def __iter__(self):
-        self.data.__iter__()
+        def __iter__(self):
+            self.data.__iter__()
