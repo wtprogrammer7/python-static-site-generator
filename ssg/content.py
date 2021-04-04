@@ -18,4 +18,9 @@ class Content(Mapping):
         @property
         def body(self):
             return self.data["content"]
+        def type(self):
+            if self.data == type:
+                return self.data["type"]
+            else:
+                return None
     
